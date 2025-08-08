@@ -1,0 +1,7 @@
+Conteúdo local no iframe
+
+É melhor usar uma div ou iframe para colocar, por exemplo, uma tabela dentro do site?
+
+O Guanabara disse que, NESSE CASO, é melhor uma div, porque existe um problema de indexação e relacionamento de conteúdo pelos mecanismo de busca em relação ao iframe.
+
+O iframe tem uma vantagem de fazer as configurações de estilo separadas.
