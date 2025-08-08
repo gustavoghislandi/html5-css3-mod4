@@ -12,13 +12,19 @@ Por padrão do VS Code, o iframe já vem com
 
     frameborder="0"
 
-Isso tira a borda do iframe. Mas é bom tirar para entender melhor o que é um iframe. Depois que vocÊ souber, aí você usa como lhe aprouver [provavelmente sem borda, ou seja, com valor do frameborder em 0].
+Isso tira a borda do iframe. Mas é bom tirar para entender melhor o que é um iframe. Depois que você souber, aí você usa como lhe aprouver [provavelmente sem borda, ou seja, com valor do frameborder em 0].
+
+frameborder só aceita valor 0 ou 1 (superior a zero).
 
 O fundo padrão do iframe é transparente.
 
 O colocar um URL de um site no iframe, o site será carregado dentro do iframe. [Ainda não sei em que contexto isso seria útil, mas consigo imaginar vários componentes de um site podendo vir de várias URLs ou APIs distintas.]
 
-[NOTA: Aparentemente, o meu navegador não permite abrir sites em iframes simples. Provavelmente por questões de segurança. Mas, ele provavelmente, como feito em outros exercícios, permitirá iframes com código embedded. TESTEI NO EDITOR DO SITE DO W3C E FUNCIONOU.]
+[NOTA: Aparentemente, o meu navegador não permite abrir sites em iframes simples. Provavelmente por questões de segurança. Mas, ele provavelmente, como feito em outros exercícios, permitirá iframes com código embedded. TESTEI NO EDITOR DO SITE DO W3C E FUNCIONOU.
+
+Edição desta parte. Depois que escrevi umas linhas dentro do primeiro iframe, mas não dentro do segundo, ambos abriram. Estranho.
+
+]
 
 Existe uma proteção que alguns sites usam para não exibir seu conteúdo dentro de iframes por sites de terceiros, como o site fo Google, por exemplo.
 

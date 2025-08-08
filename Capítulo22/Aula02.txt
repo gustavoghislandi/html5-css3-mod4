@@ -1,0 +1,18 @@
+Configurando iframes
+
+Nem todos os navegadores de celular têm suporte ao iframe.
+
+O que você colocar entre as tags do iframe só vai aparecer se o navegador não for compatível. Pode ser um texto, pode ser um link...
+
+Tamanho padrão de um iframe: 300x150 px.
+
+Também é possível ajustar largura e altura com as CSS.
+
+As configurações das CSS são hierarquicamente superiores às que estão como atributos dentro do iframe.
+
+Existe o atributo 'scrolling', cujos valores 'auto' e 'yes' permitem a rolagem, enquanto o valor 'no' não permite.
+
+Você pode personalizar a border normalmente. Claro, coloque o frameborder="0" para não interefir esteticamente.
+
+--
+A grande uso do iframe é colocar um conteúdo próprio dentro de um iframe, ao invés de sites de terceiros (que muitas vezes podem ser bloqueados.).
