@@ -1,0 +1,54 @@
+Inconvenientes do iframe
+
+Diz o Guanabara que os iframes valem a pena, sim. Não veja os próximos vídeos com tristeza, pois ele irá apresentar soluções.
+
+--
+Primeiro, não confunda frame com iframe.
+
+Você não teria um vídeo do YouTube no seu site se não fosse um iframe. Por isso não adianta falar que iframe é totalmente ruim.
+
+Mas também não são totalmente bons.
+
+--
+Segundo, problemas em relação a mecanismos de busca.
+
+Segundo o próprio Google, existem alguns problemas para o Googlebot acessar e indexar um conteúdo de um iframe (página interna, por exemplo) de um site.
+
+Então, nunca monte um site com muitos iframes nem coloque conteúdos muito relevantes para indexação dentro do iframe.
+
+No material PDF tem um link da comunidade do Google falando sobre esse problema. 
+
+Não é garantido que o Googlebot não entre nos iframes, mas pode existir algum problema de identificação ou indexação.
+
+--
+Terceiro, problemas em relação a usabilidade e acessibilidade.
+
+Acessibilidade: 
+
+Pessoas cegas usam softwares leitores de tela. Esses softwares ficam perdidos, eles têm problema para acessar iframes.
+
+Usabilidade: 
+
+Quando o próprio navegador ou o usuário acabam se confundindo.
+
+Tem navegadores que, ao invés de voltar o conteúdo de dentro do iframe ao clicar em voltar no navegador, voltam da página principal.
+
+Sites que usam target='_blank'. Alguns navegadores tem problema em abrir essa nova página, ao invés de abrirem em uma nova aba, abrem dentro do iframe.
+
+Se o site não for responsivo, pode ser que ele apareça todo 'quebrado' dentro do iframe.
+
+--
+Questões de segurança.
+
+Os iframes abrem uma porta do seu site para um outro site. Então, cuidado para quem você abre a porta. É igual na sua casa, você não abre para qualquer um.
+
+Quando vocẽ usa um iframe e coloca um site que foi, por exemplo, invadido e está usando técnicas de captura de informações do usuário, o seu site começa a fazer isso para o outro site.
+
+Então tome muito cuidado com os sites que você abre dentro do seu site.
+
+Isso é responsabilidade única e exclusivamente sua, do desenvolvedor.
+
+Cross-site e XSS são exemplos de ataques.
+
+--
+Ele não está demonizando eles. Mas não abuso do uso.
