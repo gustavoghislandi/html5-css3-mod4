@@ -1,0 +1,9 @@
+Conteúdo no iframe por código
+
+Ao invés de colocar um link como valor no 'src' do iframe, para ser o primeiro a aparecer, é possível utilizar o 'srcdoc' para escrever HTML.
+Exemplo:
+
+     <iframe name="frame99" srcdoc="<h1>Escolha uma das opções acima</h1><p>lorem" frameborder="0"> </iframe>
+
+--
+Isso é mais para conhecimento. O recomendado é criar um arquivo separado e colocar o CSS lá, etc.
