@@ -1,0 +1,29 @@
+O iframe ainda pode ser usado?
+
+O iframe não está desafado. Não confunda com o frame, que está.
+
+O iframe tem a ver com iPhone, iPad, Apple? Não.
+
+O 'i' do 'iframe' vem de 'inline'. Então, o iframe é um frame inline.
+
+O Guanabara, em tradução livre, chamará o iframe de "quadro em linha". No material oficial da W3C, eles chamam de iframe, sem tradução.
+
+Por padrão do VS Code, o iframe já vem com 
+
+    frameborder="0"
+
+Isso tira a borda do iframe. Mas é bom tirar para entender melhor o que é um iframe. Depois que vocÊ souber, aí você usa como lhe aprouver [provavelmente sem borda, ou seja, com valor do frameborder em 0].
+
+O fundo padrão do iframe é transparente.
+
+O colocar um URL de um site no iframe, o site será carregado dentro do iframe. [Ainda não sei em que contexto isso seria útil, mas consigo imaginar vários componentes de um site podendo vir de várias URLs ou APIs distintas.]
+
+[NOTA: Aparentemente, o meu navegador não permite abrir sites em iframes simples. Provavelmente por questões de segurança. Mas, ele provavelmente, como feito em outros exercícios, permitirá iframes com código embedded. TESTEI NO EDITOR DO SITE DO W3C E FUNCIONOU.]
+
+Existe uma proteção que alguns sites usam para não exibir seu conteúdo dentro de iframes por sites de terceiros, como o site fo Google, por exemplo.
+
+Isso é uma proteção.
+
+O iframe não é inútil, mas ele tem alguns problemas de segurança. Que, agora, com o HTML5 já dá pra prever e resolver ou, pelo menos, reduzir eles.
+
+Então, não ouça quem for vilanizar dizendo para não usar para nada, mas também não ouça quem diz para usar para tudo. Há um meio termo entre esses extremos. Essas aulas adiante serão para explanar melhor sobre isso.
