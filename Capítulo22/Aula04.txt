@@ -1,0 +1,10 @@
+Navegação no iframe
+
+Se você quiser abrir uma página de um link <a> em um iframe, é só dar um name(usando o atributo 'name') para o iframe e colocar no valor do atributo 'target' do link o name dado ao iframe como valor.
+Exemplo: 
+
+    <a href="paginas-extras/pag001.html" target="frame99">Primeira página</a>
+
+    <iframe name="frame99" src="" frameborder="0"> </iframe>
+
+Veja iframe003.html para testar o exemplo.
