@@ -1,0 +1,52 @@
+Tornando iframes mais seguros
+
+Como dito antes, podem usar o seu site ara capturar informações do usuário.
+
+Se escrever dentro do iframe do iframe004.html (que é o pag004.html), dados estarão sendo capturados.
+
+Para bloquear todas as ações potencialmente maliciosas de dentro do iframe escreva dentro da tag iframe o atributo 'sandbox="sandbox"'.
+
+Ao fazer isso, é bloqueado todo e qualquer acesso que o site do iframe tente fazer, como por exemplo, um cadastro/form. [Aparentemente, meu navegador já em isso por padrão.]
+
+Com o 'sandbox="sandbox"', não há mais capturas de informação. Isso liga todas as configurações de segurança no nível máximo.
+
+--
+Outra maneira de deixar o site um pouco mais seguro:
+
+    referrerpolicy="no-referrer-when-downgrade"
+
+Isso significa que o referenciador será enviado apenas quando a requisição não for para um protocolo menos seguro (por exemplo, de HTTPS para HTTP).
+
+--
+Você sabe que os sites coletam informações do seu site para mostrar propaganda.
+
+     referrerpolicy="no-referrer"
+
+Quando você coloca esse atributo acima, significa que não irá [não deverá?] coletar nenhum tipo de informação do usuário. Ela aciona o máximo de segurança dentro do seu site.
+
+--
+Você pode colocar mais de uma configuração, por exemplo.
+
+Se você quer, por exemplo, permitir um formulário que seja seu, que esteja no mesmo servidor que o seu, use:
+
+    sandbox="allow-same-origin allow-forms allow-scripts"
+
+
+Cada espaço entre os textos do valor do atributo são uma nova configuração.
+
+O 'allow-scripts' é porque o HTML5 executa scripts quando executa formulários.
+
+Então, nesse exemplo está permitindo mesma origem, formulários e scripts.
+
+Entretanto, tenha muito cuidado.
+--
+
+É bastante arriscado você deixar outro site(que não o seu) executar scripts. Um exemplo de script (não inseguro, mas só para exemplificar) é o feito na pag004.html e usado via iframe em iframe005.html.
+
+No caso do exemplo acima foi adicionado ' referrerpolicy="no-referrer" sandbox="sandbox" ' e isso bloqueou tudo, então o script de exemplo não executa mais. Depois, foi permitido 'allow-scripts'.
+
+--
+Sobre 'referrerpolicy' coloque sempre no modo mais anônimo ("no-referrer"), ele não permitirá capturar dados de ninguém.
+
+--
+Concluindo, não coloque qualquer site dentro de um iframe no seu site. É um cuidado muito grande que você tem que ter. Existem proteções. Mas se você não utilizá-las, não adianta de nada.
