@@ -1,0 +1,18 @@
+Dicas para iframes melhores
+
+Ele deu dica usando o vimeo. Não tem mais as configurações direto pelo vimeo, tem que digitar elas na mão.
+
+Ele está ensinando a compartilhar com embed code a colocar no site mapas do Google, Waze...
+
+Também está ensinando a colocar coisas do Google Docs. Pode ser Apresentação, Documento de texto, Planilhas...
+
+Vá em "Arquivo", "Publicar na Web", depois em "Incorporar". [Já não é mais essa sequência exata, mas é encontrável.]
+
+OS documentos do Google são somente para visualização. Não há como o visitante editá-los, seja planilha, doc de texto ou apresentação.
+
+[Testei e, com exceção do Vimeo e do Waze, se bloquear tudo, mas colocar 'sandbox'="allow-scripts" eles parecem funcionar.]
+
+---
+Então é isso. iframe não é um recurso ultrapassado. Ele tem seu momento de ser utilizado.
+
+--- FIM do Capítulo 22 ---
