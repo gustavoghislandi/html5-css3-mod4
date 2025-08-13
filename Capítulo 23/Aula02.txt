@@ -1,0 +1,5 @@
+Vamos começar o projeto
+
+Criar um repo chamado 'projeto-social'.
+
+Lembrar de criar um index.html e uma pasta estilos.
