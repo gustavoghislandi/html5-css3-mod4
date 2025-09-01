@@ -1,5 +1,9 @@
 Vamos começar o projeto
 
-Criar um repo chamado 'projeto-social'.
+Criar um repo chamado 'projeto-social'. Vou fazer esse repo depois que estiver pronto. Por enquanto, vou continuar no "html5-css3-mod4".
 
 Lembrar de criar um index.html e uma pasta estilos.
+
+----
+
+Por mais que ele tenha dito que é para seguir os passos dele, como é um desafio, eu quero tentar sozinho. Faz um certo tempo que já vi as aulas dele sobre o assunto, mas vou ver o que faço e se consigo fazer dentro do que ele mostrou na Aula01.
