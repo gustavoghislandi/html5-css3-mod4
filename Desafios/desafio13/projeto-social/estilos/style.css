@@ -1,10 +1,22 @@
 @charset "UTF-8";
 
-/* * {
+* {
     margin: 0px;
     padding: 0px;
-} */
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: url('../pacote-d013/imagens/fundo-madeira.jpg') center / cover no-repeat fixed;
+    /* Aparentemente, um min-height aqui não impede o navegador de encolher em altura. */
+    min-width: 320px; /* Já esse não é alcançado */
+}
+
+img {
+    position: absolute;
+    
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
 }
