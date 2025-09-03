@@ -12,13 +12,21 @@ body {
     min-width: 320px; /* Já esse não é alcançado */
 }
 
-img.iphone {
+img.iphone, div.fra {
     position: absolute;
     
     left: 50%;
     top: 50%;
 
     transform: translate(-50%,-50%);
+}
+
+div.fra {
+    background-color: yellow;
+    height: 470px;
+    width: 266px;
+    margin-top: 3px;
+    margin-left: 1px;
 }
 
 div.container {
