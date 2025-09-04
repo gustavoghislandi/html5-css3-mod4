@@ -12,7 +12,7 @@ body {
     min-width: 320px; /* Já esse não é alcançado */
 }
 
-img.iphone, div.fra {
+img.iphone, div.fra, iframe {
     position: absolute;
     
     left: 50%;
@@ -23,6 +23,13 @@ img.iphone, div.fra {
 
 div.fra {
     background-color: yellow;
+    height: 470px;
+    width: 266px;
+    margin-top: 3px;
+    margin-left: 1px;
+}
+
+iframe {
     height: 470px;
     width: 266px;
     margin-top: 3px;
