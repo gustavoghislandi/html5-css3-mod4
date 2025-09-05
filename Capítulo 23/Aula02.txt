@@ -7,3 +7,48 @@ Lembrar de criar um index.html e uma pasta estilos.
 ----
 
 Por mais que ele tenha dito que é para seguir os passos dele, como é um desafio, eu quero tentar sozinho. Faz um certo tempo que já vi as aulas dele sobre o assunto, mas vou ver o que faço e se consigo fazer dentro do que ele mostrou na Aula01.
+
+
+
+----- Ajuda de GPT - dicas -----
+
+Para adicionar esse movimento de "deslocamento" suave ao hover, podemos combinar o `transform` com a propriedade `translate()`. Isso permitirá que a imagem se mova para a esquerda (ou para cima) enquanto é ampliada.
+
+### O que vamos fazer:
+
+* Vamos usar `transform: scale()` para aumentar a imagem.
+* Vamos usar `transform: translate()` para mover a imagem para a esquerda e/ou para cima.
+
+### Alterações no código CSS:
+
+```css
+a img {
+    border: 1px solid transparent;
+    display: block; /* Para garantir que a imagem não afete o layout */
+    transition: transform 0.3s ease; /* Suaviza o efeito de ampliação e movimento */
+}
+
+a img:hover {
+    border: 1px solid white;
+    transform: scale(1.1) translate(-10%, -10%); /* Amplia e move a imagem para a esquerda e para cima */
+}
+```
+
+### Explicação:
+
+* **`scale(1.1)`**: Isso aumenta o tamanho da imagem em 10%.
+* **`translate(-10%, -10%)`**: Esse comando move a imagem para a esquerda e para cima. O primeiro valor `-10%` move a imagem para a esquerda, e o segundo valor `-10%` move para cima. Os valores podem ser ajustados para o efeito que você deseja.
+
+  * **`-10%`** significa mover a imagem para 10% de sua largura para a esquerda e 10% de sua altura para cima.
+  * Se quiser um movimento mais suave ou um deslocamento maior, você pode ajustar esses valores, como `-20%` ou até mesmo `-30%`, dependendo da sua necessidade.
+
+### Resultado:
+
+Quando você passar o mouse sobre a imagem, ela vai:
+
+1. Aumentar de tamanho (zoom).
+2. Se mover suavemente para a esquerda e para cima, criando esse efeito de "deslocamento".
+
+Esse efeito não vai interferir na posição dos outros elementos da página, já que o `transform` não afeta o layout global. É uma maneira eficiente de criar esse tipo de animação.
+
+Caso precise de mais ajustes ou quiser tentar outros efeitos, só avisar!
