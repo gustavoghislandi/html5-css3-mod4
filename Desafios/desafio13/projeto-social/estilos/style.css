@@ -41,7 +41,7 @@ div.container {
     flex-direction: column;
     gap: 17px;
     margin-top: 10px;
-    position: fixed;
+    position: absolute; /* Troque de fixed para absolute para permitir rolagem de tela e acessar todos os botões em telas muito pequenas */
     right: 10px;
 }
 
