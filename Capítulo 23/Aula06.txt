@@ -1,0 +1,37 @@
+Criando as páginas de cada rede social
+
+Na aula que vem ele disse que vai ensinar a fazer aquela página comprida usando o GIMP.
+
+Em comparação as telas dele, que vão dentro do iframe, aparentemente eu coloquei umas duas divs a mais. A que está dentro do a parece desnecessária mesmo.
+
+Para centralizar verticalmente, ele parece ter colocado somente um padding, enquanto eu usei flexbox.
+
+Ele escondeu a barra de rolagem com
+
+    ::-webkit-scrollbar
+
+porém, como uso mozilla, não funcionou, o ChatGPT me passou os comandos equivalentes:
+
+/* Para WebKit (Chrome, Edge, Safari) */
+        ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+
+        /* Para Firefox */
+        * {
+            scrollbar-width: none;
+            scrollbar-color: transparent transparent;
+        }
+
+        /* Garante que a rolagem ainda funciona */
+        .scrollable {
+            overflow: auto;
+            /* ou scroll */
+        }
+
+Importante: Ocultar a barra de rolagem pode prejudicar a usabilidade e acessibilidade. Use isso com cautela, especialmente em aplicações públicas.
+
+---
+
+Ele unificou os estilos em um único arquivo. Evidentemente é muito melhor. No meu caso, uma ou outra precisaria de um estilo local por conta de 1px de diferença.

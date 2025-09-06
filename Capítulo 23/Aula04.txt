@@ -2,4 +2,4 @@ Posicionando o conteúdo do site
 
 Nessa aula, enquanto eu coloquei a 'tela-home' como img, o Guanabara colocou como background-image. A maneira que ele usou acho que deve fazer um pouco mais sentido para ajustar. Ele usou 100vh e 100vw, enquanto eu acabei fazendo um ajuste de 101% (porque botei uma div amarela de fundo para checar). Não testei nesse projeto a maneira dele, mas parece melhor a dele.
 
-A lagura da tela do iphone (iframe) dele ficou em 269px, a minha em 267px. Pelo que vi, 269px transborda ligeiramente. 267px fica dentro, mas tem as limitações do tamanho unitário do pixel.
+A lagura da tela do iphone (iframe) dele ficou em 269px, a minha em 267px. Pelo que vi, 269px transborda ligeiramente. 267px fica dentro, mas tem as limitações do tamanho unitário do pixel. EDIT: Ele reajustou na aula 06 para 267px.
