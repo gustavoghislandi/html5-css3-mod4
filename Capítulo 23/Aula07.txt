@@ -1,0 +1,20 @@
+Personalizando as imagens do projeto
+
+Ele tirou vários prints a partir do celular dele das páginas dele.
+
+Depois foi no GIMP e mudou o tamanho da tela de pintura da primeira imagem. Ele foi em Imagem > Tamanho da tela de pintura... e mudou a altura para 10000, porque aí a imagem cresce para baixo.
+
+Depois disso, ele reposicionou a imagem e foi cortando e colando os pedaços das outras imagens até gerar uma imagem única comprida.
+
+Depois, com o espaço que sobrou, ele usou a ferramenta de corte (primeiro ícone da direita em cima, no painel que fica na esquerda em cima).
+
+Em seguida, redimensionou a imagem para 600px de largura, em Imagem > Redimensionar imagem. 
+
+Você pode diminuir mais se quiser economizar (considerando que lá estava 267px, acho que dá...)
+
+Por fim, ele exportou como .jpg.
+
+--
+Provavelmente, ele fez a página nesse estilo com imagens e não diretamente carregando as páginas, para evitar bloqueios do iframe que poderiam ocorrer.
+
+FIM DO CAPÍTULO 23.
