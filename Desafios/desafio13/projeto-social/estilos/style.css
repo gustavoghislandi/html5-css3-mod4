@@ -21,14 +21,6 @@ img.iphone, div.fra, iframe {
     transform: translate(-50%,-50%);
 }
 
-div.fra {
-    background-color: yellow;
-    height: 470px;
-    width: 266px;
-    margin-top: 3px;
-    margin-left: 1px;
-}
-
 iframe {
     height: 470px;
     width: 267px;
@@ -36,7 +28,7 @@ iframe {
     margin-left: 1px;
 }
 
-div.container {
+section.container {
     display: flex;
     flex-direction: column;
     gap: 17px;
@@ -47,17 +39,20 @@ div.container {
 
 a img {
     border: 2px solid transparent;
-    transition: transform 0.3s ease; /* Nessa parte aqui a IA me ajudou */
+    transition: transform 0.3s ease, border 0.9s ease;
+
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397)
 }
 
-
 a img:hover {
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.904);
     transform: scale(1.1) translate(-5%, -5%); /* Nessa parte aqui a IA me ajudou */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397), inset 5px 5px 10px black;
 }
 
 img.logo{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    box-shadow: inset 5px 5px 10px black;
 }

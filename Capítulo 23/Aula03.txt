@@ -1,0 +1,9 @@
+Criando a página inicial do projeto
+
+NOTA: A partir daqui eu já concluí o desafio, só não coloquei as referências dos links, a princípio. 
+
+De início, ele colocou umas tagas semânticas, o que eu não fiz. Só usei div, basicamente, afinal, sequer texto havia. Mas acabei não colocando sequer o main.
+
+Depois, vi que ele utilizou o iphone como imagem de background, enquanto eu coloquei somente a imagem. Acredito que da forma que eu fiz é mais rápido e melhor, com menos código.
+
+O fundo de madeira dele, ele colocou como top center. Eu mantive só center, para acompanhar o iphone que fica no centro.

@@ -1,0 +1,54 @@
+Criando os botões para redes sociais
+
+Não coloquei a mensagem "Seu navegador não é compatível com isso", caso o navegador não seja compatível com iframe. Bem raro, hoje em dia.
+
+Ele colocou uma box-shadow nos botões, eu não coloquei. Mas agora ajustei.
+
+Como ele não usou flexbox, ele usou margin e <br> para dar o espaçamento para cada botão, pois o <br> quebra a linha.
+
+Depois ele usou um text-align right. Aqui, convenhamos, eu fiz melhor, pois coloquei o container na direita, e não o "texto", pois não há texto.
+
+NOTA MAIS INTERESSANTE (do meu ponto de vista): Como ao colocar a borda os outros componentes mexiam, ele usou em img
+
+    box-sizing: border-box;
+
+enquanto eu usou uma borda transparente de mesma espessura.
+
+
+------------------- GPT -------------------
+
+Usar box-sizing: border-box;
+✔ O que faz:
+
+Altera o modelo de caixa (box model).
+
+Faz com que padding e border sejam incluídos dentro do tamanho total da caixa (largura e altura).
+
+Vantagens:
+
+O tamanho visual do elemento (e o espaço que ele ocupa) não muda quando a borda é aplicada ou alterada.
+
+Evita empurrar outros elementos ao redor.
+
+Ideal para componentes interativos (botões, cards, etc.).
+
+⚠ Consideração:
+
+É importante sempre definir a borda (ainda que transparente) no estado inicial para garantir que o layout já reserve aquele espaço.
+
+
+--------
+
+Ainda o GPT disse que é possível usar o 'outline' com o border-box, que ele extrapolará a borda do elemento sem interferir no layout (nos outros elementos).
+
+Eu testei o outline colocando na cor 'blue' e ficou um efeito interessante, porém não mantive. E, realmente, não alterou o layout.
+
+------------------- fim do GPT -------------------
+
+Para que reste claro, o box-sizing:border-box; coloca a border e o padding dentro do tamanho da caixa.
+
+Ele colocou mais sombra no hover para dar a sensação de que o elemento se afastou do fundo em profundidade, ficou bem interessante. Super sutil, mas bem legal.
+
+Na cor da borda, segui ele e coloquei um branco ligeiramente mais sutil.
+
+Ele usou mais de um transition (com vírgula), dando tempo diferente para o botão trocar de lugar e para a borda aparecer. Muito legal também! Adotei a ideia.
