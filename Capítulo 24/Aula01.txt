@@ -1,0 +1,7 @@
+Como criar formulários com HTML5
+
+Todo formulário tem que estar entre as tags <form> e </form>.
+
+input, via de regra, são as tags que tem caixa de preenchimento.
+
+Ao final(na verdade, em qualqeur lugar dentro do form) do formulário, coloque input do tipo submit, que é para enviar o formulário.
