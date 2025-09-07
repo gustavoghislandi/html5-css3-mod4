@@ -1,0 +1,44 @@
+Usar Label vai melhorar seus formulários
+
+Até então, no form001.html o formulário não estava indo para lugar nenhum. E os escritos(Nome e Sobrenome) não estavam vinculados aos seus respectivos campos.
+
+Você pode desligar o autocomplete(sugestões de escrita nos campos) com:
+
+    <form autocomplete="off">
+
+
+O atributo 'action' é a ação que será executada ao clicar no botão 'submit'.
+
+O Guanabara disse que normalmente se envia os dados do formulário para uma lingugem (PHP, Java...) [Oi? Acho que ele quis dizer um backend, que usa uma lingugem de backend].
+
+Diferença entre 'name' e 'id'.
+
+O 'name' é mais útil para o HTML e para o PHP (o PHP precisa do name).
+
+Enquanto 'id' é mais útil para JavaScript, por exemplo. Até é possível usar o name no JavaScript, porém o 'id' é o que vem automaticamente. O 'label' faz uso do 'id' também.
+
+Então, é necessário identificar todos os campos de entrada. É ideal, portanto, que os inputs tenham name e id.
+
+--
+O 'label' faz uso do 'id' também. Então, para vincular o label com o input, é necessário colocar o valor do id do input dentro do atributo 'for' do label.
+
+O Guanabara sugeriu uma padronização em que todo id terá um 'i' na frente. Exemplo: name="nome" id="inome". Pode ser o mesmo nome, mas por questões didáticas é melhor assim.
+
+Não se faz formulário sem relacionar o label ao seu elemento (input). Se não você dificulta os mecanismos de busca, etc, para saber qual caixa está relacionada a qual label.
+
+Mais do que isso, ao passar o mouse no label, a caixa fica com o contorno(border) ligeiramente mais escuro/espesso e, ao clicar no label, ele já seleciona a caixa (input). Isso é muito útil para celulares, por exemplo, ainda mais se o usuário tiver um dedo muito grande e a tela pequena.
+
+Pelo que testei e pesquisei, é melhor colocar o input dentro do label, para melhorar a área clicável. Abaixo uma resposta do ChatGPT:
+
+---
+Vantagens:
+
+Maior área clicável: Todo o conteúdo do <label>, incluindo o texto "Nome:" e o campo de entrada, é clicável. Isso melhora bastante a usabilidade em dispositivos móveis ou para pessoas com dificuldades motoras.
+
+Acessibilidade: A associação entre <label> e <input> ainda funciona perfeitamente por causa do atributo for combinado com o id.
+
+Prática para estilização interativa: Como o label envolve o input, fica fácil aplicar estilos que mudam o fundo ou a borda do conjunto inteiro quando o input está focado, por exemplo.
+
+---
+
+Use sempre o label.
