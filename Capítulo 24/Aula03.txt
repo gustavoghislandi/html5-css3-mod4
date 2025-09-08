@@ -1,0 +1,59 @@
+Métodos GET e POST para formulários
+
+Quando não se coloca método nenhum, o método padrão é o GET.
+
+Com o método POST, dentro de form, usar o atributo method="POST", os dados ainda estão acessíveis, porém não tão explícitos.
+
+É possível ainda acessar os dados via DevTools > Network > nome_do_arquivo > Headers.
+
+Ou seja, os dados do formulário ficam ali no Header do arquivo.
+
+[Testei no Firefox e nada apareceu no Header]
+
+------ChatGPT-----
+Se você enviar esse tipo de dado em POST, ele aparecerá no DevTools do navegador, e poderá ser visualizado por:
+
+- O próprio usuário.
+
+- Alguém com acesso ao computador.
+
+- Um atacante com acesso ao navegador (malware, extensão maliciosa etc.).
+
+Boa prática	                                                             Por que é importante?
+
+✅ Use sempre HTTPS	                                                    Evita interceptação dos dados
+✅ Envie senhas criptografadas (idealmente com hash e salt no backend)	Evita que senhas sejam vazadas mesmo que os dados sejam interceptados
+✅ Nunca exponha tokens/senhas no JavaScript ou no console	            Evita que uma extensão ou outro script acesse
+✅ Não armazene informações sensíveis no localStorage ou sessionStorage	Podem ser lidas facilmente por scripts maliciosos
+✅ Limite o que o cliente pode ver	                                    O back-end deve sempre fazer validações
+
+Resumo
+
+Sim, pode ser um risco se dados sensíveis forem expostos.
+
+Mas isso não é um bug do DevTools, e sim algo que precisa ser projetado com segurança desde o front até o back.
+
+O fato de os dados aparecerem no DevTools é esperado e útil para desenvolvimento — mas deve-se ter cuidado com o que se envia e como.
+
+------Fim do ChatGPT------
+
+Não é para ser inseguro, mas faça uso das boas práticas acima.
+
+Voltando no Guanabara, ele disse que para proteger os dados tem que usar o protocolo HTTPS, que irá criptografar os dados. E para isso você terá que estudar bem mais. 
+
+Ou seja, a segurança do POST somente é muito rudimentar.
+
+Pode usar o GET quando os dados não forem sensíveis.
+
+Se você quiser que a URL possa ser compartilhável, como, por exemplo, uma busca feita no site do Google, aí você usa GET.
+
+IMPORTANTE: O envio de dados via GET é de 3000 bytes (aprox. 3000 caracteres). Se ultrapassar disso, o método não deve ser GET.
+
+Números de senha, cartão de cŕedito, fotos em que o formulário faça esse envio, não são via GET.
+
+POST: Dados sensíveis (usando HTTPS), se você não quiser que os dados apareçam na URL, dados com mais de 3000 bytes, envio de arquivos também vai usar o POST.
+
+Antigamente, o GET era mais rápido, hoje em dia não existe mais diferença perceptível na velocidade. Existe a diferença, mas não é perceptível.
+
+Ou seja, basicamente, se vocÊ não quiser que a URL seja compartilhável, não vejo muita ventagem no GET.
+
