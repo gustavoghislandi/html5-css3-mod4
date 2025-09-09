@@ -2,7 +2,7 @@ Métodos GET e POST para formulários
 
 Quando não se coloca método nenhum, o método padrão é o GET.
 
-Com o método POST, dentro de form, usar o atributo method="POST", os dados ainda estão acessíveis, porém não tão explícitos.
+Com o método POST, dentro de form, usar o atributo method="POST" (pode ser "post" também, mas em PHP tem diferença), os dados ainda estão acessíveis, porém não tão explícitos.
 
 É possível ainda acessar os dados via DevTools > Network > nome_do_arquivo > Headers.
 

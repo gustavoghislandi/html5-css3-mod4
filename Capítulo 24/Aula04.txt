@@ -1,0 +1,28 @@
+Criando caixas de texto e de senha
+
+form002.html
+
+Normalmente o espaçamento é com div e não com p, mas no começo, ele está usando p.
+
+type=password é para senha (ficam ocultos na UI os caracteres)
+
+type=reset limpa os campos.
+
+Todo formulário roda um JavaScript.
+
+O atributo 'required' faz com que se exija que o campo seja preenchido antes de enviar.
+
+Os atributos minlenght="X" e maxlenght="X" definem o número mínimo e máximo de caracteres (limitar o tamanho do nome ou mínimo de caracteres em uma senha, por exemplo).
+
+Se senha está certa ou não, etc, é o PHP (backend) que irá verificar.
+
+A senha também pode ser interessante limitar porque você armazenará os dados em um banco de dados, então a função do limitador de máximo de caracteres pode ser usado em função do limite definido para armzenamento no banco de dados.
+
+O atributo size="X" define a quantidade de caracteres a serem mostrados na UI da caixa. Isso não restringe a quantidade de caracteres que o campo aceita, é somente o tamanho da caixa (definido pela quantidade de caracteres a mostrar). [Pelo que testei, está mais para a quantidade de caracteres em CAIXA ALTA.]
+
+O atributo 'placeholder' é aquele que dá uma dica do que o usuário deve colocar, é aquele texto de fundo que some quando se preenche algo no campo.
+
+O atributo 'autocomplete' no form só aceita on ou off. Contudo, se você colocar ele no input, ele te dará os diversos tipos de dado (porque são dados que ficam (podem ficar) armanezados no navegador).
+
+Dentre os diversos valores, a senha, por exemplo, tem new-password ou current-password, um para a senha nova e outro para quando já é uma existente, evidentemente (para quem sabe inglês).
+

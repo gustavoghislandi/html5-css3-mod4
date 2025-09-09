@@ -6,7 +6,6 @@ Você pode desligar o autocomplete(sugestões de escrita nos campos) com:
 
     <form autocomplete="off">
 
-
 O atributo 'action' é a ação que será executada ao clicar no botão 'submit'.
 
 O Guanabara disse que normalmente se envia os dados do formulário para uma lingugem (PHP, Java...) [Oi? Acho que ele quis dizer um backend, que usa uma lingugem de backend].
