@@ -6,7 +6,7 @@ Normalmente o espaçamento é com div e não com p, mas no começo, ele está us
 
 type=password é para senha (ficam ocultos na UI os caracteres)
 
-type=reset limpa os campos.
+type=reset limpa os campos que estiverem entre <form> e </form>.
 
 Todo formulário roda um JavaScript.
 

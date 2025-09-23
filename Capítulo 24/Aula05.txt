@@ -1,0 +1,54 @@
+Elementos number, month, date e time em formulários HTML
+
+Evite colocar acentos nos id(s) e name(s).
+
+No input de type number, o Mozilla permite digitar letras, porém não valida e não permite submeter o formulário. Também não permite "-", a menos que sinalize sinal de negativo (ou seja, primeira casa).
+
+Com o atributo "step", é possível trabalhar com float. O step com valor "0.5" fará com que sejam aceitos números de 0,5 em 0,5.
+
+Nem todos os atributos funcionam em todos os controles. (Ele não tem como passar tudo aqui.)
+
+
+----------------
+No Mozilla a seleção de mês não funcionou.
+
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+
+Se estivesse funcionando, iria enviar "ano-mes", exemplo "2020-10". Como não está, parece aceitar qualquer valor, como se fosse uma string.
+
+O required parece sequer funcionar nele.
+
+--- Dica GPT
+
+Alternativa com JavaScript: Se você precisar garantir que o seletor de mês funcione em todos os navegadores, uma solução alternativa seria usar JavaScript para criar uma interface customizada para seleção de mês e ano. Aqui está um exemplo básico usando o select:
+
+<p>
+    <label for="imes">Período Letivo</label>
+    <select id="imes" name="mes">
+        <option value="2025-01">Janeiro 2025</option>
+        <option value="2025-02">Fevereiro 2025</option>
+        <option value="2025-03">Março 2025</option>
+        <!-- Adicione outras opções aqui -->
+    </select>
+</p>
+
+Dica:
+
+Se você quiser garantir que a experiência do usuário seja consistente, pode também usar uma biblioteca como o 
+Flatpickr
+ou o Pickadate.js
+que fornece seletores de data e mês totalmente personalizáveis e funciona bem em vários navegadores.
+----------------
+
+Quando se coloca o atributo value, ele faz com que tenha um valor pré-preenchido.
+
+[O input de date varia conforme a língua do SO. O meu está em inglês, então fica mm/dd/yyyy]
+
+No envio dos dados de type="date" é "ano-mes-dia", exemplo "2020-10-20".
+
+O Guanabara disse que esses valores serão colocados com JS.
+
+O input type="time" envia a hora neste formato "19%3A30". No Mozilla no meu PC é selecionado 07:30 PM, enquanto no do Guanabara era 19:30.
