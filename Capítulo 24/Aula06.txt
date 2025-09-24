@@ -1,0 +1,7 @@
+Compatibilidade com navegadores
+
+Foi visto que alguns navegadores não tem compatibilidade com tudo.
+
+O que seria possível de fazer é usando o JavaScript você fazer os seus próprios controles. O que não é objeto deste curso nem desta aula.
+
+Então, preste bastante atenção, verifique/teste na maioria dos navegadores. Pois há muitos usuários com navegadores antigos, desatualizados.
