@@ -1,0 +1,31 @@
+Formulários com telefone e e-mail
+
+autocomplete do type tel tem 'mobile', 'tel' e diversos 'tel...'
+
+Recomendação, estudar mais sobre RegEx (Expressões regulares).
+
+Toda expressão regular começa com ^ e termina com $.
+
+Dígitos podem ser \d ou [0-9].
+
+Depois entre chaves, você coloca quantos dígitos são, exemplo:
+
+pattern="^[0-9]{5}-[0-9]{4}"
+
+outro exemplo:
+
+pattern="^\d{4,5}-\d{4}"
+
+acima, o {4,5} diz que é 4 ou 5 dígitos.
+
+Para colocar parenteses, você precisa colocar a \ (contrabarra) antes, assim '\(' e '\)'. Exemplo:
+
+pattern="^\(\d{2}\)\d{4,5}-\d{4}"
+
+É possível validar e-mail também.
+
+Saiba que nenhuma dessas validações de HTML5 são suficientes. Mais para frente, você terá que validar em JavaScript ou PHP, por exemplo.
+
+As tags <fieldset></fieldset> são interessantes para agrupar campos por tipos de dados.
+
+Abaixo dela, você pode usar <legend></legend> para dar um título/nome a esse fieldset.
