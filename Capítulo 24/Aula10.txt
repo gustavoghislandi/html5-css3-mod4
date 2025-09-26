@@ -1,0 +1,11 @@
+Select, datalist e textarea em HTML
+
+No 'select', você usará múltiplos 'option', poderá agrupá-los dentro de um <optgroup></optgroup>.
+
+Para deixar um pré-selecionado é o atributo 'selected' ao invés de 'checked', agora.
+
+O 'datalist' mostrará uma lista também. Ele não está aceitando optgroup [o Guanabara disse que deveria, mas que não está].
+
+A diferença principal entre eles é que o select é um rol taxativo/fechado. Enquanto o datalist é um rol aberto ou exemplificativo, pois é possível colocar opções não previstas.
+
+O próximo é o textarea. Também é recomendado usar o método post, por conta do tamanho.
