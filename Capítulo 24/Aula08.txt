@@ -1,0 +1,9 @@
+Checkbox e Radio button em HTML
+
+No radio button, o name deles deve ser igual para que somente um seja selecionado entre eles. No checkbox isso não é assim. (O id, claro, deve ser diferente, até para o clique no label funcionar corretamente)
+
+Em ambos os casos, colocar o atributo 'checked' deixará pré-selecionado.
+
+Lembre-se de colocar 'value="valor"', que é o que irá sair no formulário. O padrão do selecionado é ir o name com o valor 'on'. Teste sempre. [No checkbox não há necessidade de colocar o value, ele aceita, mas, via de regra, não faz sentido colocar.]
+
+O Guanabara disse para já ir se acostumando, porque quando chegar em PHP, vem tudo de formulário.
