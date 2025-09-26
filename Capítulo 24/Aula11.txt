@@ -1,0 +1,5 @@
+Elemento output em formulários HTML
+
+O output não é para calcular nem enviar nada, ele é só para mostrar coisas na tela. No exemplo de soma, os valores enviados foram somente os dos inputs e não o total (output).
+
+O código de JS será feito dentro do atributo oninput="JS_aqui" das tags de input. No caso de soma, ele deve ser replicado em cada um, pois a soma só será executada (via JS) quando o usuário alterar o valor do input que contém o atributo oninput. Do contrário, correria o risco de a soma só ser calculada corretamente se o usuário alterar o input que não contém o oninput antes [evidentemente, não é um bom UX fazer isso].
