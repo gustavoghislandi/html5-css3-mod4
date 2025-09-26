@@ -1,0 +1,13 @@
+Elementos color, range e file em HTML
+
+Existem mais tipos de 'input', mas nessa aula serão os últimos vistos.
+
+No input de cor ('color'), o que é enviado no formulário é o código hexadecimal. %23 é a #.
+
+Por padrão, o input range vai de 0 a 100. Você pode modificar isso.
+
+Esses componentes também irão variar conforme o navegador, então teste em diversos antes.
+
+O último input a ser apresentado é o 'file'. Existe também o 'image', mas esse você não deixa o visitante escolher, é você quem escolhe (e não foi mostrado porque precisa de funcionalidades extras, como PHP).
+
+Quando for usar o envio de arquivos (file), você deve utilizar o método POST (já que passa de 3KB.)

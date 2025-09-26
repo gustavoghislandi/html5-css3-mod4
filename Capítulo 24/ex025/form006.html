@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="idcor" value="#ff9000">
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" max="1000" value="900">
+            <span id="valor">900</span>
+        </p>
+        <p>
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+        <!-- <p>
+            <input type="image" src="../smile.jpeg" alt="">
+        </p> -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </form>
+
+        <!-- Não faz parte do curso, mas eu quis colocar o valor do lado. IA me ajudou. -->
+        <script>
+            const slider = document.getElementById('inivel');
+            const valor = document.getElementById('valor');
+
+            slider.addEventListener('input', function () {
+                valor.textContent = slider.value;
+            });
+
+        </script>
+</body>
+</html>
