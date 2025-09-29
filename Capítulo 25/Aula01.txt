@@ -1,3 +1,10 @@
 O que são Media Queries em CSS
 
-(teste de commit)
+Media queries são necessárias pois existem diversas mídias diferentes em que o seu site poderá ser visitado, diversas telas de tamanhos diferentes.
+
+'Media query' é singular, media queries é plural.
+
+Media queries podem ser usadas também para versões para impressões. Exemplo: quando você vai em um site e pressiona Ctrl + P, isso irá gerar a página em formato para impressão. Se nela não aparecer o rodapé e diversos outros items desnecessários, além de aparecer alguns adicionais informacionais, é porque foi usado uma media query para impressão.
+
+
+Se você visitar um site como o YouTube, você verá que a depender do tamanho de tela muda a quantidade de vídeos apresentados na horizontal, muda também o tamanho e a forma do menu, por exemplo. Então, com media queries se consegue apresentar o conteúdo de formas diferentes.
