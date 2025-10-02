@@ -1,0 +1,25 @@
+Múltiplas Media Features com CSS
+
+Sobre media types, para informação, existe também o tipo para "impressora de braile", "handheld"...
+
+Media query = Media type + Media features (Media Query é igual a Media type mais Media features.)
+
+Media feature é característica de mídia. Então, existem várias características de tela, várias diferentes.
+
+O CSS Media type 'all' servirá para todos os dispositivos, todos os tipos de media, com isso escreve-se menos CSS. [Eu diria que é semelhante a uma variável global, porém para CSS e em relação às mídias ali usadas.]
+
+Media features são escritas entre parenteses. Exemplo:
+
+<link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+<link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+
+Se tiver 3 media features, tem que usar 3 pares de parenteses, uma para cada. Exemplo:
+
+---GPT---
+<link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape) and (max-width: 1200px) and (min-width: 800px)">
+---Fim do GPT---
+
+Na aula seguinte é a continuidade desse projeto.
+
+--
+OBS: ele copiou imagens para uma pasta imagem para dentro do projeto. Eu vou só referenciar elas diretamente, não pretendo replicar as imagens.
