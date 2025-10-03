@@ -1,0 +1,9 @@
+Reunindo tudo em um único CSS
+
+Isso é para um projeto menor.
+
+Pode ser feito dento de style no documento HTML. Isso pode ir para um arquivo CSS único. Ou fazer separado como na aula anterior.
+
+mq003 é o desta aula.
+
+[Como eu estou usando um único local de imagens, sem replicar elas, é necessário ficar atento quando mudar o local de onde partem as diretrizes de CSS, pois isso pode mudar a URL(path) das imagens]
