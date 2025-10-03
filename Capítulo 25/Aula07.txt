@@ -1,0 +1,3 @@
+Iniciando um site mobile first
+
+Ver pasta 'mq004'. Nela foi feito o site mobile first mexendo somente em 'style.css'; 'media-query.css' será para as outras versões.
