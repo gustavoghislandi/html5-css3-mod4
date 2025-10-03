@@ -1,0 +1,15 @@
+Mobile First
+
+Mobile First surgiu de Luke Wroblewski, em 2009(segundo o Google é em 2010). Ao invés dos site ser feito web e depois ir removendo partes dele para caber no mobile, agora o site é criado na sua versão mobile e depois as partes não são removidas[aparentemente, nem adicionadas], são somente reposicionadas.
+
+A partir de agora, desenvolveremos sites focados em mobile first, no curso.
+
+Muitas pessoas dependem de dispositivos móveis para acessar sites, então, ao focar em deixar o site o mais leve possível e o mais rápido possível, isso melhora a experiência do usuário e também o algoritmo do Google valoriza o site por consequência.
+
+Há também um aumento na credibilidade. Pois, instintivamente, o usuário valoriza o fato de o site caber e funcionar bem no celular também.
+
+Ganho em performance. Como em muitos lugares o acesso à internet com celular é mais precário, os sites precisam ser mais leves.
+
+--
+
+Lembre-se nada de usar imagens pesadas no seu site.
