@@ -1,0 +1,6 @@
+Media Queries para outros dispositivos
+
+[Foi uma adaptação com JS]
+
+--
+Ele disse pra tentar fazer sozinho o próximo desafio.
