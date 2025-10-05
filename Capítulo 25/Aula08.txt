@@ -1,0 +1,13 @@
+Device breakpoints
+
+Device breakpoints são os limites de tamanho de tela [pelo que pesquisei rapidamente, é em largura, mas pode ser pensado em termos de altura também]. 
+
+O Guanabara comentou sobre como alguns dispositivos são de telas grandes mas tem poucos pixels em tela e outros são menores mais tem muitos pixels, buscando uma maior definição. 
+
+Então, isso varia muito e deve ser pesquisado no ano em que você estiver executando algum projeto quais os device breakpoints dos dispositivos daquele ano.
+
+Pesquise por: 'Typical Device Breakpoints'. No W3C, os valores que encontrei são os mesmos que o Guanabara passou. Evidentemente, hoej em dia (2025) já há telas muito maiores. E, no futuro, provavelmente teremos outros tamanhos e outras UI (como as 3D).
+
+No modo impressão, o background não vai aparecer.
+
+Teste em diversos dispositivos e veja como o resultado ficou.
