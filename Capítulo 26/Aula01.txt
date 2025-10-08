@@ -1,0 +1,12 @@
+Tela de login responsiva só com HTML e CSS
+
+O projeto-login do Guanabara pode ser encontrado em:
+
+https://professorguanabara.github.io/projeto-login/
+
+Na última aula, ele sugeriu de tentar fazer isso sozinho. Dá mais trabalho e leva mais tempo, mas é melhor para o aprendizado. Ele disse que isso é aprender a programar.
+
+Nota: Quando terminar de fazer aqui, criar um repositório específico para ele, igual nos outros projetos, como o projeto-android, e habilitar esse repositório para rodar no GitHub.
+
+--
+Faça o projeto em Mobile First.
