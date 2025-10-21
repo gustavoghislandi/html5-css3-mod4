@@ -57,3 +57,49 @@ body {
 
     margin-top: 10px; /* poderia ser margin-bottom no h1 */
 }
+
+form {
+    background-color: green;
+}
+
+input {
+    position: relative;
+    display: block;
+    /* margin: auto; */
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 18%;
+
+    border-radius: 7px;
+}
+
+#labellog {
+    background-color: #5f2c82;
+    border-radius: 4px;
+
+    position: absolute;
+    width: 90%;
+    height: 2em;
+    top: 60%;
+    left: 5%;
+}
+
+#labelpass {
+    background-color: #5f2c82;
+    border-radius: 4px;
+
+    position: absolute;
+    width: 90%;
+    height: 2em;
+    top: calc(60.5% + 2em);
+    left: 5%;
+}
+
+#submiti {
+    position: absolute;
+    width: 90%;
+    height: 2em;
+    top: calc(60.5% + 5em);
+    left: 5%;
+}
