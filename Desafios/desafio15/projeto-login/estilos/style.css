@@ -12,6 +12,48 @@
 }
 
 body {
-    background: linear-gradient(to top, #49a09d, #5f2c82);
+    /* background: linear-gradient(to top, #49a09d, #5f2c82); */
+    background: #5f2c82;
     height: 100vh;
+}
+
+#login {
+    height: 500px;
+    width: 250px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    /* border: 2px solid white; */
+    border-radius: 16px;
+
+    box-shadow: rgba(0, 0, 0, 0.726) 1px 1px 4px;
+}
+
+#imagem {
+    height: 40%;
+    background-color: yellow;
+    background-image: url('../imagens/building-peq.jpg');
+    background-size: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+#formulario {
+    height: 60%;
+    background-color: white;
+    border-radius: 0px 0px 16px 16px;
+
+    padding: 10px;
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#formulario p {
+    text-align: left;
+    font-size: 12px;
+
+    margin-top: 10px; /* poderia ser margin-bottom no h1 */
 }
