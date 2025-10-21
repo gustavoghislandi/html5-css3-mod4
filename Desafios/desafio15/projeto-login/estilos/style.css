@@ -5,3 +5,13 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to top, #49a09d, #5f2c82);
+    height: 100vh;
+}
