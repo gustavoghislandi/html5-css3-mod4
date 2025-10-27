@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: de 992px até 1200px (oi?)
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width:768px) and (max-width: 992px) { /* Tablet */
+    body {
+    background: linear-gradient(to top, #49a09d, #5f2c82);
+    height: 100vh;
+}
+    #login {
+        height: 280px;
+        width: 650px;
+    }
+    #imagem {
+        height: 100%;
+        width: 35%;
+        display: inline-block;
+        border-radius: 16px 0px 0px 16px;
+        background-position-y: -60px;
+        
+    }
+    #formulario {
+        height: 93%;
+        width: 62.3%;
+        display: inline-block;
+        border-radius: 0px 16px 16px 0px;
+
+        position: absolute;
+    }
+    
+    .material-symbols-outlined {
+        margin-left: 16px;
+        padding-right: 10px;
+    }
+
+    #envelope {
+        margin-left: 0px;
+    }
+}
