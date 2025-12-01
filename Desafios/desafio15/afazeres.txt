@@ -1,0 +1,13 @@
+transicionar entre medias com animação suave.
+
+Fazer o campo da senha ficar validado a partir de 8 caracteres (não funcinou usando o "min" somente).
+
+Fazer com que seja requerido formato de e-mail no login.
+
+Fazer o terceiro tamanho de media.
+
+Quando para tablet, ser ajustável o tamanho da tela.
+
+Ajustes finos, se quiser deixar idêntico (talvez seja interessante deixar intencionalmente um pouco diferente).
+
+
