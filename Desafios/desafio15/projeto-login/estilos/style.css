@@ -65,10 +65,12 @@ input.field {
     position: relative;
     display: inline-block;
     /* margin: auto; */
-    width: 81%;
+    width: 80%;
     height: 90%;
-    top: -12%;
+    top: -15%;
     left: 2%;
+
+    padding-left: 4px;
 
     font-size: 1em;
 
@@ -114,6 +116,7 @@ input:focus {
     color: #2d6462;
     font-size: 1em;
     padding-bottom: 6px;
+    border: solid 1px;
 }
 
 /* icons */

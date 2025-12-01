@@ -1,6 +1,6 @@
 transicionar entre medias com animação suave.
 
-Fazer o campo da senha ficar validado a partir de 8 caracteres (não funcinou usando o "min" somente).
+Fazer o campo da senha ficar validado a partir de 8 caracteres (não funcionou usando o "min" somente).
 
 Fazer com que seja requerido formato de e-mail no login.
 
