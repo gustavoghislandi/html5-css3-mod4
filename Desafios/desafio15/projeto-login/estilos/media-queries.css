@@ -13,10 +13,10 @@ Grandes telas: acima de 1200px
     body {
     background: linear-gradient(to top, #49a09d, #5f2c82);
     height: 100vh;
-}
+    }
     #login {
         height: 280px;
-        width: 650px;
+        width: 80%;
     }
     #imagem {
         height: 100%;
@@ -33,6 +33,42 @@ Grandes telas: acima de 1200px
         border-radius: 0px 16px 16px 0px;
 
         position: absolute;
+    }
+    
+    .material-symbols-outlined {
+        margin-left: 16px;
+        padding-right: 10px;
+    }
+
+    #envelope {
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width:992px) { /* Desktop */
+    body {
+    background: linear-gradient(to top, #49a09d, #5f2c82);
+    height: 100vh;
+    }
+    #login {
+        height: 350px;
+        width: 950px;
+    }
+    #imagem {
+        height: 100%;
+        width: 50%;
+        display: inline-block;
+        border-radius: 0px 16px 16px 0px;
+        background-position-y: -363px;
+        position: absolute;
+        right: 0%;   
+    }
+    #formulario {
+        height: 94.2%;
+        width: 48%;
+        display: inline-block;
+        border-radius: 16px 0px 0px 16px;
+        position: absolute;
+        left: 0%;
     }
     
     .material-symbols-outlined {
