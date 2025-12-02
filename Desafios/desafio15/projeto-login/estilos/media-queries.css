@@ -70,6 +70,14 @@ Grandes telas: acima de 1200px
         position: absolute;
         left: 0%;
     }
+
+    #formulario p {
+    text-align: left;
+    font-size: 16px;
+
+    margin-top: 20px; /* poderia ser margin-bottom no h1 */
+    margin-bottom: 25px;
+}
     
     .material-symbols-outlined {
         margin-left: 16px;
