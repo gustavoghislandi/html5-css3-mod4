@@ -1,8 +1,8 @@
-transicionar entre medias com animação suave.
+OK - Transicionar entre medias com animação suave.
 
-Fazer o campo da senha ficar validado a partir de 8 caracteres (não funcionou usando o "min" somente).
+OK -Fazer o campo da senha ficar validado a partir de 8 caracteres (não funcionou usando o "min" somente).
 
-Fazer com que seja requerido formato de e-mail no login.
+OK -Fazer com que seja requerido formato de e-mail no login.
 
 OK - Fazer o terceiro tamanho de media.
 
