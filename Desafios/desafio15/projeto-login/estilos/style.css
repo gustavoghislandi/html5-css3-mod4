@@ -67,7 +67,7 @@ input.field {
     position: relative;
     display: inline-block;
     /* margin: auto; */
-    width: 80%;
+    width: 79%; /* Antes --> width: 80%; */
     height: 90%;
     top: -15%;
     left: 2%;
