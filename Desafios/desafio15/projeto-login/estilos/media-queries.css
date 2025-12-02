@@ -39,11 +39,6 @@ Grandes telas: acima de 1200px
         width: 87%;
     }
     
-    .material-symbols-outlined {
-        /* margin-left: 16px; */
-        /* padding-right: 10px; */
-    }
-
     #envelope {
         margin-left: 0px;
     }
@@ -85,11 +80,6 @@ Grandes telas: acima de 1200px
 
     input.field {
         width: 87.5%;
-    }
-    
-    .material-symbols-outlined {
-        /* margin-left: 16px; */
-        /* padding-right: 10px; */
     }
 
     #envelope {
