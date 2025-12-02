@@ -16,3 +16,7 @@ CONCLUÍDO sem todos os ajustes finos. Alguns ajustes em distâncias seriam nece
 
 Agora vou ver como ele fez, se o código está muito diferente e refletir se ele fez algo mais complexo ou menos complexo do que eu para a solução.
 
+--
+Edit pós-vídeo:
+    - Fonte alterada.
+
