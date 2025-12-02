@@ -1,0 +1,5 @@
+Versão mobile first da tela de login
+
+Interessante, para podar a imagem ao invés de colocar bordas iguais ao da caixa nela, ele uso o comando CSS:
+
+    overflow: hidden;
