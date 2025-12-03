@@ -32,6 +32,8 @@ body {
     box-shadow: rgba(0, 0, 0, 0.726) 1px 1px 4px;
 
     transition-duration: 0.3s;
+
+    transition-timing-function: ease; /* Particularmente, não senti diferença ao usar isso com 0.3s. Talvez para mais tempo se perceba algo MUITO sutil. No Aula03.txt tem a descrição do que ocorre. */
 }
 
 #imagem {

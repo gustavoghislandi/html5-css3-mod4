@@ -1,0 +1,63 @@
+Outras Media Queries para o projeto
+
+Ele disse para já testar (em dispositivos como um smartphone) o site enquanto vai desenvolvendo.
+
+Ele deixou explícito display: block nas div imagem e formulario.
+
+Com isso, logo em seguida ele usou "float" (left e right), o que tornou ligeiramente mais fácil de posicionar, do que em relação à maneira que eu fiz. [Bem interessante isso, vou ter que testar para fixar o aprendizado disso.]
+
+Mais para frente isso será resolvido com o flexbox [que me recordo ser o padrão do React Native]
+
+A maneira que ele usou o transition foi assim:
+
+    transition: width .3s, height .3s;
+
+(pode ser 0.3s ou .3s)
+
+[Eu preciso testar para ver se faz diferença. Provavelmente faria se aos componentes/elementos fossem determinados tempos diferentes entre eles]
+
+Ele usou também
+
+    transition-timing-function: ease;
+
+O que suaviza a transição.
+
+---
+
+Após aplicação, gostei da facilidade de trabalhar com o float e com o overflow: hidden. O ease parece muito pouco perceptível; se for, será somente em tempos maiores.
+
+
+
+-------------------------------------------------------------------
+
+---- ChatGPT sobre o transition-timing-function ----
+
+A propriedade `transition-timing-function` em CSS, especialmente com valores como `ease`, `ease-in`, `ease-out` ou `ease-in-out`, determina como o tempo de execução de uma transição é distribuído entre o início e o fim. O efeito visual resultante pode parecer mais "suave" ou "natural" durante a transição. Quando você aplica o valor `ease` a uma transição, o navegador manipula a aceleração da animação de uma forma específica, que é o que torna a mudança entre os estados mais suave e menos abrupta.
+
+Aqui está o que acontece nos bastidores quando você utiliza `ease`:
+
+1. **Fórmula Matemática por Trás**:
+   A função `ease` usa uma curva de Bézier cúbica definida por `(0.25, 0.1, 0.25, 1)`, o que, basicamente, cria uma aceleração mais suave e gradual ao longo do tempo.
+
+   * **Começo (início suave)**: O efeito começa mais devagar, o que pode ser mais agradável para o usuário, evitando uma sensação abrupta no início.
+   * **Meio (aceleração)**: O movimento acelera à medida que a transição avança, o que dá a sensação de naturalidade.
+   * **Final (fim suave)**: A transição desacelera à medida que se aproxima do valor final, evitando um término abrupto ou mecânico.
+
+2. **Exemplo Visual**:
+   Quando uma propriedade de CSS (como a cor, opacidade, ou posição) é alterada com uma transição, o `ease` faz com que o movimento comece devagar, acelere no meio e depois desacelere quando está chegando ao fim. Esse comportamento imita movimentos naturais e evita transições de aparência robótica.
+
+3. **Psicologia do Usuário**:
+   O `ease` ajuda a criar uma sensação de fluidez, que tende a ser mais agradável para os usuários. Isso é muito utilizado em interfaces para dar uma sensação de suavidade e refinamento, em vez de transições que são lineares e constantes, que podem parecer mecânicas ou artificiais.
+
+4. **Outras Funções de Temporização**:
+
+   * `linear`: A transição acontece à mesma velocidade durante todo o tempo.
+   * `ease-in`: A aceleração começa devagar e depois aumenta.
+   * `ease-out`: Começa rápido e desacelera até o final.
+   * `ease-in-out`: Combina o efeito de `ease-in` e `ease-out`, começando devagar, acelerando e desacelerando no final.
+
+Por exemplo, se você tem uma transição de cor com `ease`, ela vai suavizar a mudança de uma cor para outra ao longo do tempo, em vez de ser abrupta ou instantânea. Isso é muito útil para criar interfaces mais agradáveis e agradáveis visualmente.
+
+Essencialmente, o que o `ease` faz é gerar um comportamento que imita como objetos se movem ou mudam no mundo real, com aceleração e desaceleração naturais, em vez de um movimento constante e mecânico.
+
+---- Fim do ChatGPT ----
