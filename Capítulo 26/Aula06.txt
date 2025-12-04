@@ -1,0 +1,92 @@
+Finalizando projeto tela de login
+
+Ele usou um raciocínio interessante para o tamanho da width.
+
+Ele usou:
+
+    width: calc(100% - 44px);
+
+O calc em si não é nada demais. A grande questão ali foi o raciocínio. Ele colocou a width 100%, que seria a largura total, menos os 40px (ele teve que ajustar para 44px) que ele atribuiu de largura (width) ao ícone que estava na mesma div do input. E também o fato de o calc funcionar misturando porcentagem e pixels, essa flexibilidade é interessante.
+
+Para reposicionar o input ele utilizou:
+
+    transform: translateY(-10px);
+
+Eu achei desnecessariamente complexo. Minha solução foi ajustar via a propriedade 'top'.
+
+Contudo, a solução dele pode ser boa para momentos como o caso em que eu tentei usar as propriedades 'left' ou 'right' e somente uma delas parecia estar sendo aplicada. Pode ser que usar um transform: translateX(), por exemplo, poderia funcionar.
+
+[Bahhh! Eu fiquei me perguntando o tempo todo de como ele tinha feito isso, sem querer olhar o código dele (para aprender a fazer por conta própria)] Ele usou uma border solida de espessura 2px com a mesma cor do background da div dele. Isso fez o efeito do roxo de fundo aparecer com o mesmo tamanho e espessura tanto na parte superior como na parte da direita de fora do input. Muito mais fácil usando essa técnica do que do jeito que eu fiz, tentando ajustar aqui e ali, até porque quanto mais bonito você quiser e mais media queries, mais ajustes têm que serem feitos e testados. A técnica que ele usou tende a simplificar muito a solução nesse tipo de caso.
+
+Ele usou focus-within ao invés de focus. Percebi que foi 'mal aplicado', para aquela situação o certo seria focus, apesar de ter funcionado. Veja a explicação do ChatGPT que mostra a diferença entre eles:
+
+----- ChatGPT -----
+
+No CSS, `:focus` e `:focus-within` são ambos pseudo-classes, mas eles são usados em contextos ligeiramente diferentes, com base em como o foco (geralmente de um teclado) afeta um elemento ou seus filhos.
+
+### 1. `:focus`
+
+A pseudo-classe `:focus` é aplicada a um elemento quando ele recebe o foco, ou seja, quando o elemento é selecionado para interação. Isso pode ocorrer, por exemplo, quando um usuário clica em um campo de entrada de texto ou navega até ele usando a tecla Tab.
+
+**Exemplo:**
+
+```css
+input:focus {
+  border-color: blue;
+}
+```
+
+Nesse exemplo, sempre que o campo de entrada (`<input>`) receber o foco (por exemplo, o usuário clica nele ou o seleciona com a tecla Tab), a cor da borda será alterada para azul.
+
+### 2. `:focus-within`
+
+A pseudo-classe `:focus-within`, por outro lado, é aplicada a um elemento pai quando **qualquer um dos seus filhos** recebe o foco. Em outras palavras, se um elemento ou qualquer um dos seus descendentes (como um campo de entrada dentro de um formulário) estiver em foco, o estilo será aplicado ao elemento que contém esses filhos.
+
+**Exemplo:**
+
+```css
+form:focus-within {
+  background-color: #f0f0f0;
+}
+```
+
+Aqui, o fundo do `<form>` mudará para uma cor de fundo mais clara sempre que qualquer elemento dentro do formulário (como um `<input>`) receber o foco, seja através de um clique ou navegação com a tecla Tab.
+
+### Resumo da diferença:
+
+* **`:focus`** aplica-se a um elemento específico que recebe o foco.
+* **`:focus-within`** aplica-se a um elemento **pai** quando qualquer um dos seus filhos (ou descendentes) recebe o foco.
+
+Essa diferença pode ser útil para, por exemplo, destacar um contêiner quando qualquer um dos seus elementos internos (como campos de formulário) estiver em foco, sem precisar adicionar estilos a cada elemento individualmente.
+
+
+----- Fim do ChatGPT -----
+
+Basicamente é isto:
+
+`:focus` aplica-se a um elemento específico que recebe o foco.
+`:focus-within` aplica-se a um elemento **pai** quando qualquer um dos seus filhos (ou descendentes) recebe o foco.
+
+Ele quis tirar a borda do focus, mas ele não sou como fazer. Para isso, deve-se usar:
+
+    outline: none;
+
+Porque a borda que o focus usa é o outline, que fica além da borda.
+
+--------------------
+NOTA IMPORTANTE:
+
+Ele disse que foi testar nos dispositivos móveis e havia coisas não funcionando. O motivo é que:
+
+SEMPRE QUE FOR UTILIZAR transform, translate, transition... ELES DEVEM SER COLOCADOS NO FINAL DO BLOCO DE DECLARAÇÕES/REGRAS DO CSS.
+
+[Na dúvida, estou alterando o meu, colocando mais ao final]
+
+Ele disse que esses microajustes podem ajudar a o código funcionar da melhor maneira possível.
+
+Ele disse que se você não está só copiando, está fazendo por conta própria, você já tem condições de ir fazendo os microajustes ao testar a tela (nessa caso ele parecia estar falando mais a respeito de alinhamento e questões estéticas). [E é verdade o que ele disse sobre isso.]
+
+
+-----------------------------------------
+
+Fim do Capítulo e do Módulo.
