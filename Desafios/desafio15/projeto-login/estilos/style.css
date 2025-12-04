@@ -138,3 +138,7 @@ input:focus {
   margin-left: 0px;
   padding-top: 9px;
 }
+
+label {
+  display: none;
+}

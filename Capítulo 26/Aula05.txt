@@ -1,0 +1,172 @@
+Aplicando estilo ao formulário de login
+
+[Opa! Aqui temos algo que eu não tinha visto ainda...]
+
+Ele usou este seletor em CSS para alterar somente o botão do tipo submit:
+
+    form > input[type"submit"]
+
+
+----------- Explicações ChatGPT -------------
+
+Os colchetes em seletores CSS são usados para selecionar elementos com atributos específicos. Isso permite que você estilize elementos não apenas com base nos seus tipos de tag ou classes, mas também de acordo com os valores de seus atributos.
+
+Como funciona o seletor de atributo?
+
+A sintaxe básica é:
+
+    elemento[atributo="valor"]
+
+Aqui, elemento é a tag HTML que você quer selecionar, atributo é o nome do atributo e valor é o valor do atributo.
+
+
+
+----- Outros tipos de seletores de atributo
+
+Além de = (igual), você pode usar outros operadores nos seletores de atributo:
+
+^=: seleciona elementos cujo valor do atributo começa com o valor especificado.
+
+    a[href^="https://"] {
+        color: green;
+    }
+
+
+Isso seleciona todos os links (<a>) cujo href começa com "https://".
+
+$=: seleciona elementos cujo valor do atributo termina com o valor especificado.
+
+    img[src$=".jpg"] {
+        border: 2px solid blue;
+    }
+
+
+Aqui, o seletor aplica um contorno azul a todas as imagens (<img>) cujo atributo src termina com ".jpg".
+
+*=: seleciona elementos cujo valor do atributo contém o valor especificado.
+
+    a[href*="exemplo"] {
+        color: purple;
+    }
+
+
+Esse seletor vai aplicar a cor roxa a todos os links que contêm a palavra "exemplo" em seu href, como href="https://www.exemplo.com".
+
+~=: seleciona elementos cujo valor do atributo é uma lista de palavras, e a lista contém a palavra especificada.
+
+    div[class~="ativo"] {
+        background-color: yellow;
+    }
+
+
+Aqui, o CSS aplica um fundo amarelo a todos os elementos div que tenham uma classe contendo a palavra "ativo".
+
+-- Outro exemplo para '~=':
+
+Selecionar elementos com um valor de atributo que contenha uma palavra específica:
+
+Digamos que você tenha elementos com um atributo data-category que contém várias categorias separadas por espaço.
+
+<div data-category="eletrônicos promoção">Produto 1</div>
+<div data-category="móveis decoração">Produto 2</div>
+<div data-category="eletrônicos acessórios">Produto 3</div>
+
+div[data-category~="eletrônicos"] {
+    border: 2px solid blue;
+}
+
+
+Explicação:
+O seletor div[data-category~="eletrônicos"] vai aplicar uma borda azul a todos os <div> que têm "eletrônicos" como uma palavra dentro do valor de data-category.
+
+Aqui, os Produto 1 e Produto 3 terão uma borda azul porque o valor de data-category de ambos contém a palavra "eletrônicos".
+
+-------
+
+A diferença entre `~=` e `*=` é simples:
+
+`~=`: Seleciona elementos cujo atributo **contém uma palavra exata** dentro de uma lista de palavras (separadas por espaço).
+
+   Exemplo: `div[class~="ativo"]` seleciona elementos onde a classe contém exatamente a palavra `"ativo"`.
+
+`*=`: Seleciona elementos cujo atributo **contém uma substring** em qualquer parte do seu valor, não importa se é uma palavra inteira ou parte de uma palavra.
+
+   Exemplo: `div[class*="ativo"]` seleciona elementos onde a classe contém `"ativo"` em qualquer lugar, como `"produto-ativo"` ou `"ativo-cliente"`.
+
+Resumindo: `~=` busca palavras exatas, e `*=` busca substrings.
+
+-------
+
+`*=` pode **substituir** o `~=` em muitos casos, porque ele encontra qualquer parte de uma palavra dentro de um valor, enquanto o `~=` busca uma **palavra exata** dentro de uma lista de palavras.
+
+Porém, **não o contrário**. O seletor `*=` pode selecionar mais elementos do que o `~=` porque ele pega substrings dentro de um valor, enquanto o `~=` só pega palavras completas.
+
+**Exemplo:**
+
+```html
+<div class="produto-ativo">Produto 1</div>
+<div class="ativo-produto">Produto 2</div>
+```
+
+* `div[class~="ativo"]` **não** seleciona nenhum desses, porque as classes não têm exatamente a palavra "ativo" sozinha.
+* `div[class*="ativo"]` **seleciona ambos**, pois "ativo" aparece em ambas as classes.
+
+Então, o `*=` é mais flexível, mas também mais abrangente!
+
+-------
+
+Sim, o **`*=`** pode, de fato, exigir **mais processamento** do que o **`~=`**, especialmente se o valor do atributo for muito longo ou se houver muitos elementos na página.
+
+Aqui está o motivo:
+
+* **`*=`**: Faz uma **busca por substring** em qualquer parte do valor do atributo. Isso significa que ele precisa examinar o valor completo do atributo para encontrar qualquer ocorrência da substring, o que pode ser mais **pesado** em termos de performance, especialmente se você estiver lidando com grandes quantidades de dados ou muitos elementos na página.
+
+* **`~=`**: Faz uma **comparação exata de palavras**. Isso geralmente é mais eficiente, pois só precisa verificar se a palavra exata está presente no atributo, sem precisar escanear o valor completo. Em comparação com `*=` (que procura em qualquer lugar dentro do valor), a verificação de uma palavra exata tende a ser mais rápida.
+
+### Impacto no desempenho
+
+* Em **páginas pequenas** com poucos elementos, a diferença de desempenho pode ser mínima.
+* Em **páginas grandes**, com muitos elementos e atributos grandes, o uso de `*=` pode causar um impacto maior no tempo de renderização, pois a busca por substrings em cada valor é mais intensiva.
+
+### Conclusão:
+
+Sim, **`*=` pode ser mais custoso em termos de performance** em comparação com **`~=`**, especialmente em situações com grandes volumes de dados. Se a eficiência for crítica, o ideal é usar `~=` quando possível, já que ele realiza buscas mais específicas e rápidas.
+
+
+-------- Fim de respostas do ChatGPT ----------------
+
+Em resumo,
+
+A sintaxe básica é:
+
+    elemento[atributo="valor"]
+
+E também é possível usar outros operadores. Resumo de cada:
+
+`^=` -> começa com valor especificado.
+`*=` -> contém substring especificada.
+`$=` -> termina com valor especificado.
+`~=` -> contém palavra exata na lista (a palavra deve estar separada por espaço)
+`=` -> valor exato do atributo.
+
+E ~= usa menos processamento que *= em códigos maiores.
+
+E, do que pesquisei agora também, especificar seletores como 'form > input' ao invés de somente input, da mesma forma, pouparia processamento em códigos grandes. Em códigos pequenos pode acabar poluindo desnecessariamente o código, porque a diferença seria mínima.
+
+----
+
+Pelo vídeo, vi que dá de mudar o tamanho dos ícones usando font-size. [Apliquei isso na tela maior]
+
+[Ele colocou um display:none para o label. Do meu ponto de vista isso invalida completamente a função do label, só deixa a parte semântica dele... Não consigo concordar. Talvez seja por questões didáticas.
+
+Peguntei ao ChatGPT e ele me respondeu isto:
+
+"O <label> tem uma função semântica e interativa importante no HTML. Quando usado corretamente, ele facilita a usabilidade e acessibilidade da página, associando um texto a um campo de formulário, o que é fundamental tanto para usuários de mouse quanto para aqueles que utilizam leitores de tela.
+
+Agora, sobre o uso de display: none no label, a questão fica mais delicada. display: none pode realmente "invalidar" a funcionalidade interativa do <label>, pois um label invisível não vai ser acessível para o usuário de forma alguma, nem mesmo para leitores de tela. Ou seja, se o label não for visível nem interativo, ele deixa de cumprir sua principal função, que é melhorar a interação do usuário com o formulário, especialmente em termos de acessibilidade.
+
+Entretanto, pode ser que essa abordagem tenha sido usada por questões didáticas, como você mencionou, ou até como uma forma de manter a estrutura semântica, mas sem priorizar a interatividade do elemento. Em alguns casos, designers ou desenvolvedores optam por esconder o label visualmente enquanto mantêm a funcionalidade de forma que os leitores de tela ainda possam ler a informação associada ao campo, mas isso não é o ideal em termos de experiência do usuário.
+
+Eu concordo com você: não é a melhor prática esconder o label com display: none, a não ser que seja por uma razão muito específica e justificada. Uma alternativa mais adequada seria usar técnicas como position: absolute para mover o label para fora da tela, ou outras abordagens que não interfiram na semântica e acessibilidade."
+]
+

@@ -133,7 +133,7 @@ Grandes telas: acima de 1200px
 
     input.field {
         width: 87.5%; /*Em verdade ele mudou a cada 0.3% e não a cada 0.1%. 89,5% é igual a 89.3%, por exemplo. */
-        top: -9%;
+        top: -16%;
         height: 92%;
     }
 
@@ -152,7 +152,8 @@ Grandes telas: acima de 1200px
     }
 
     .material-symbols-outlined {
-        padding-top: 12px;
+        font-size: 1.8em;
+        padding-top: 10px;
     }
 }
 
@@ -164,6 +165,9 @@ Grandes telas: acima de 1200px
 
 @media screen and (min-width:1700px) {
     input.field {
-        width: 89%;
+        width: 88.5%;
+    }
+    .material-symbols-outlined {
+        padding-top: 10px;
     }
 }
