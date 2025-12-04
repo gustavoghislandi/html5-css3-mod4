@@ -18,21 +18,20 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
 
                     <label for="logi" id="labellog">
                     <span class="material-symbols-outlined">person</span>
-                    <input class="field" type="email" name="log" id="logi" placeholder=" seu e-mail" required>
+                    <input class="field" type="email" name="log" id="logi" placeholder=" seu e-mail" required autocomplete="email" maxlength="60">
                     </label>
 
                     <label for="passi" id="labelpass">
                     <span class="material-symbols-outlined">key</span>
-                    <input class="field" type="password" name="pass" id="passi" placeholder=" sua senha" minlength="8" required>
+                    <input class="field" type="password" name="pass" id="passi" placeholder=" sua senha" minlength="8" required autocomplete="current-password" maxlength="30">
                     </label>
                     <input type="submit" value="Entrar" id="submiti">
                 </form>
 
-                <!-- Alterei a cor deste botão, que fica um pouco melhor esteticamente -->
                 <button class=rec-senha>Esqueci a senha <span id="envelope" class="material-symbols-outlined" style="color: inherit;font-size: 12px;">mail</span></button>
             </div>
         </section>

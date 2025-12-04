@@ -1,0 +1,7 @@
+Criando o formulário de login
+
+O Guanabara colocou o label depois do input, e o ícone fora do label, antes mesmo do input [por isso que o ícone dele não é clicável como o meu ficou].
+
+Ele usou autocomplete [vou adicionar no meu].
+
+Ele usou um link ao invés de um button para o botão de "Esqueci a senha". Disse ele que para evitar usar JS.
